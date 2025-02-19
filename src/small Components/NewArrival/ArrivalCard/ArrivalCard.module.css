@@ -1,0 +1,14 @@
+.shopNow::after {
+  content: " ";
+  display: block;
+  width: 81px;
+  height: 1px;
+  background-color: white;
+  margin-top: 4px;
+}
+
+@media (max-width: 641px) {
+  .shopNow::after {
+    width: 62px;
+  }
+}

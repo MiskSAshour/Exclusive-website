@@ -1,0 +1,273 @@
+.footer {
+  background-color: #000000;
+  min-height: 440px;
+  width: 100%;
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ParentComponent {
+  display: flex;
+  gap: 87px;
+  position: relative;
+  top: 80px;
+  justify-content: center;
+}
+
+.footerUl {
+  max-width: 217px;
+  text-align: left;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.footerUl h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+.footerUl ul li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-top: 24px;
+}
+
+small {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+
+.QRCode {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.QRCode div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.socialMedia {
+  width: 75%;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialMedia img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+  transition: all 0.2s ease;
+}
+
+.emailInputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1.5px solid #fafafa;
+  border-radius: 4px;
+  padding: 12px 0;
+  padding-left: 16px;
+  width: 217px;
+}
+
+.emailInput {
+  background: transparent;
+  color: #3d3d3d;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  width: 150px;
+}
+
+.emailSubmitButton {
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.emailSubmitButton img {
+  transition: transform 0.2s ease;
+}
+
+.emailSubmitButton:hover img {
+  transform: scale(1.1);
+}
+
+.footerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  width: 100%;
+  border-top: 1px solid #3d3d3d;
+  background-color: #000000;
+  color: #3d3d3d;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.copyrightText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+  color: #3d3d3d;
+  font-size: 21px;
+  margin-right: 8px;
+}
+
+/* Responsive */
+@media (min-width: 600px) and (max-width: 1250px) {
+  .ParentComponent {
+    gap: 55px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    margin-bottom: 13%;
+  }
+
+  .footer {
+    min-height: fit-content;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footerUl {
+    width: 50%;
+  }
+
+  .QRCode {
+    gap: 12px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 600px) {
+  .ParentComponent {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20%;
+  }
+
+  .footer {
+    min-height: fit-content;
+  }
+
+  .footerUl {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .QRCode {
+    gap: 16px;
+  }
+
+  .socialMedia {
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .gridList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .gridList li {
+    text-align: center;
+  }
+
+  .gridList li:nth-last-child(1):nth-child(odd) {
+    grid-column: span 2; /* Make the last item span two columns */
+    justify-self: center; /* Center-align the item in the grid */
+  }
+}
+
+@media (max-width: 480px) {
+  .ParentComponent {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30%;
+  }
+
+  .footer {
+    min-height: fit-content;
+  }
+
+  .footerUl {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .QRCode {
+    gap: 16px;
+  }
+
+  .socialMedia {
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .gridList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .gridList li {
+    text-align: center;
+  }
+
+  .gridList li:nth-last-child(1):nth-child(odd) {
+    grid-column: span 2; /* Make the last item span two columns */
+    justify-self: center; /* Center-align the item in the grid */
+  }
+
+  .copyrightText {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .copyright {
+    color: #3d3d3d;
+    font-size: 15px;
+    margin-right: 8px;
+  }
+}

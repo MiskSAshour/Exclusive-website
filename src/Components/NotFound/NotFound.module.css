@@ -1,0 +1,102 @@
+/* Container Styling */
+.notFoundContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Heading Styling */
+.heading {
+  font-size: 110px;
+  font-weight: 500;
+  line-height: 115px;
+  letter-spacing: 0.03em;
+}
+
+/* Description Text Styling */
+.description {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+/* Button Styling */
+.customButton {
+  background-color: #db4444;
+  color: #ffffff;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 48px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 140px;
+  line-height: 24px;
+}
+
+.customButton:hover {
+  background-color: #c23c3c;
+  transform: scale(1.05);
+}
+
+.customButton:active {
+  background-color: #b23434;
+  transform: scale(1);
+}
+
+/* Responsive Design */
+
+/* Small Screens (Phones) */
+@media (max-width: 600px) {
+  .heading {
+    font-size: 48px;
+    line-height: 54px;
+  }
+  .description {
+    font-size: 14px;
+    margin-bottom: 60px;
+  }
+  .customButton {
+    padding: 12px 36px;
+    font-size: 14px;
+    margin-bottom: 100px;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .heading {
+    font-size: 72px;
+    line-height: 84px;
+  }
+  .description {
+    font-size: 15px;
+  }
+  .customButton {
+    padding: 14px 40px;
+    font-size: 15px;
+  }
+}
+
+/* Large Screens (Desktops) */
+@media (min-width: 1025px) {
+  .heading {
+    font-size: 110px;
+    line-height: 115px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .customButton {
+    padding: 16px 48px;
+    font-size: 16px;
+  }
+}
